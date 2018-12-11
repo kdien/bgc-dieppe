@@ -79,7 +79,7 @@ if ( get_theme_mod( 'illdy_sticky_header_enable', false ) ) {
 <?php endif; ?>
 <header id="header" class="<?php echo $header_class; ?>" style="<?php echo $style; ?>">
 	<div class="top-header">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-4 col-xs-8">
 
