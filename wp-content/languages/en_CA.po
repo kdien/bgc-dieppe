@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.0.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-10 14:53:14+0000\n"
+"PO-Revision-Date: 2018-12-10 22:23:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14828,60 +14828,6 @@ msgstr "Suggestion:"
 msgid "Font Size"
 msgstr "Font Size"
 
-#. translators: weekday
-#. translators: one-letter abbreviation of the weekday
-#. translators: three-letter abbreviation of the weekday
-#: wp-includes/class-wp-locale.php:135 wp-includes/class-wp-locale.php:144
-#: wp-includes/class-wp-locale.php:153
-msgid "Saturday"
-msgstr "Sat"
-
-#. translators: weekday
-#. translators: one-letter abbreviation of the weekday
-#. translators: three-letter abbreviation of the weekday
-#: wp-includes/class-wp-locale.php:134 wp-includes/class-wp-locale.php:143
-#: wp-includes/class-wp-locale.php:152
-msgid "Friday"
-msgstr "Fri"
-
-#. translators: weekday
-#. translators: one-letter abbreviation of the weekday
-#. translators: three-letter abbreviation of the weekday
-#: wp-includes/class-wp-locale.php:133 wp-includes/class-wp-locale.php:142
-#: wp-includes/class-wp-locale.php:151
-msgid "Thursday"
-msgstr "Thu"
-
-#. translators: weekday
-#. translators: one-letter abbreviation of the weekday
-#. translators: three-letter abbreviation of the weekday
-#: wp-includes/class-wp-locale.php:132 wp-includes/class-wp-locale.php:141
-#: wp-includes/class-wp-locale.php:150
-msgid "Wednesday"
-msgstr "Wed"
-
-#. translators: weekday
-#. translators: one-letter abbreviation of the weekday
-#. translators: three-letter abbreviation of the weekday
-#: wp-includes/class-wp-locale.php:131 wp-includes/class-wp-locale.php:140
-#: wp-includes/class-wp-locale.php:149
-msgid "Tuesday"
-msgstr "Tue"
-
-#. translators: weekday
-#. translators: one-letter abbreviation of the weekday
-#. translators: three-letter abbreviation of the weekday
-#: wp-includes/class-wp-locale.php:130 wp-includes/class-wp-locale.php:139
-#: wp-includes/class-wp-locale.php:148
-msgid "Monday"
-msgstr "Mon"
-
-#. translators: weekday
-#: wp-includes/class-wp-locale.php:129 wp-includes/class-wp-locale.php:138
-#: wp-includes/class-wp-locale.php:147
-msgid "Sunday"
-msgstr "Sun"
-
 #. translators: month name
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:167 wp-includes/class-wp-locale.php:195
@@ -14957,6 +14903,60 @@ msgstr "February"
 #: wp-includes/js/dist/components.js:29391
 msgid "January"
 msgstr "January"
+
+#. translators: weekday
+#. translators: one-letter abbreviation of the weekday
+#. translators: three-letter abbreviation of the weekday
+#: wp-includes/class-wp-locale.php:135 wp-includes/class-wp-locale.php:144
+#: wp-includes/class-wp-locale.php:153
+msgid "Saturday"
+msgstr "Saturday"
+
+#. translators: weekday
+#. translators: one-letter abbreviation of the weekday
+#. translators: three-letter abbreviation of the weekday
+#: wp-includes/class-wp-locale.php:134 wp-includes/class-wp-locale.php:143
+#: wp-includes/class-wp-locale.php:152
+msgid "Friday"
+msgstr "Friday"
+
+#. translators: weekday
+#. translators: one-letter abbreviation of the weekday
+#. translators: three-letter abbreviation of the weekday
+#: wp-includes/class-wp-locale.php:133 wp-includes/class-wp-locale.php:142
+#: wp-includes/class-wp-locale.php:151
+msgid "Thursday"
+msgstr "Thursday"
+
+#. translators: weekday
+#. translators: one-letter abbreviation of the weekday
+#. translators: three-letter abbreviation of the weekday
+#: wp-includes/class-wp-locale.php:132 wp-includes/class-wp-locale.php:141
+#: wp-includes/class-wp-locale.php:150
+msgid "Wednesday"
+msgstr "Wednesday"
+
+#. translators: weekday
+#. translators: one-letter abbreviation of the weekday
+#. translators: three-letter abbreviation of the weekday
+#: wp-includes/class-wp-locale.php:131 wp-includes/class-wp-locale.php:140
+#: wp-includes/class-wp-locale.php:149
+msgid "Tuesday"
+msgstr "Tuesday"
+
+#. translators: weekday
+#. translators: one-letter abbreviation of the weekday
+#. translators: three-letter abbreviation of the weekday
+#: wp-includes/class-wp-locale.php:130 wp-includes/class-wp-locale.php:139
+#: wp-includes/class-wp-locale.php:148
+msgid "Monday"
+msgstr "Monday"
+
+#. translators: weekday
+#: wp-includes/class-wp-locale.php:129 wp-includes/class-wp-locale.php:138
+#: wp-includes/class-wp-locale.php:147
+msgid "Sunday"
+msgstr "Sunday"
 
 #: wp-includes/comment-template.php:1533
 msgid "Enter your password to view comments."
