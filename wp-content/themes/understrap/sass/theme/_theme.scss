@@ -19,3 +19,15 @@
 .nav-item {
     margin-right: 1.25em;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    border-bottom: 2px solid #fff;
+}
+
+.dropdown-item:active {
+    background-color: #66cc00;
+}
