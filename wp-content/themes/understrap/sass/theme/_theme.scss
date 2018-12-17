@@ -1,6 +1,6 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 .bg-primary {
-    background-color: #66cc00 !important;
+    background-color: #74BC1F !important;
 }
 
 .navbar-brand {
@@ -29,13 +29,29 @@
 }
 
 .dropdown-item:active {
-    background-color: #66cc00;
+    background-color: #74BC1F;
 }
 
 .post {
-	background-color: rgb(102,204,0);
-	margin-bottom: 2em;
-	border-bottom-right-radius: 50vh;
-  border-top-right-radius: 50vh;
-	padding: 1em;
+    margin-bottom: 2em;
+}
+
+.entry-content {
+	display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: min-content;
+    grid-gap: 1.5em;
+    div:nth-child(1) {
+        background-color: #74BC1F;
+        border-bottom-right-radius: 50vh;
+        border-top-right-radius: 50vh;
+        padding: 1em;
+        p {
+            margin-right: 10%;
+        }
+    }
+}
+
+.wp-post-image {
+	border-radius: 50%;
 }
