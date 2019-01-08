@@ -26,6 +26,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php wp_head(); ?>
 </head>
 
+<style>
+	.navbar .nav-link {
+		text-transform: uppercase;
+	}
+
+</style>
+
 <body <?php body_class(); ?>>
 
 <div class="site" id="page">
@@ -35,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-xl navbar-dark bg-primary">
+		<nav class="navbar navbar-expand-xl navbar-dark bg-primary fixed-top">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container-fluid" >

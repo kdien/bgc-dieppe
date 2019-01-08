@@ -24,11 +24,18 @@
     color: #fff;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link {
-    border-bottom: 2px solid #fff;
-}
-
 .dropdown-item:active {
     background-color: #74BC1F;
 }
 
+@media (min-width: 1200px) {
+    .navbar-dark .navbar-nav .active>.nav-link, .current_page_parent {
+        border-bottom: 2px solid #fff;
+    }
+}
+
+@media (max-width: 1199px) {
+    .navbar-dark .navbar-nav .nav-link {
+        text-align: center;
+    }
+}

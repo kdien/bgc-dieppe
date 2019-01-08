@@ -11,11 +11,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <style>
+
 	#page-wrapper {
 		padding-top: 0;
 	}
 
 	#metaslider_container_298 {
+		margin-top: 5.5em;
 		left: 49.25%;
 		margin-left: -50vw;
 		margin-right: -50vw;
@@ -24,6 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		right: 50%;
 		width: 100vw;
 	}
+
 </style>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
