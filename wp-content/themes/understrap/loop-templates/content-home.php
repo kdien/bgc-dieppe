@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	#metaslider_container_298 {
 		margin-top: 5.5em;
-		left: 49.25%;
+		left: 49.36936%;
 		margin-left: -50vw;
 		margin-right: -50vw;
 		max-width: 100vw;

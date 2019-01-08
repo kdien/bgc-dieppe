@@ -26,13 +26,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php wp_head(); ?>
 </head>
 
-<style>
-	.navbar .nav-link {
-		text-transform: uppercase;
-	}
-
-</style>
-
 <body <?php body_class(); ?>>
 
 <div class="site" id="page">

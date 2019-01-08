@@ -3,6 +3,16 @@
     background-color: #74BC1F !important;
 }
 
+a {
+    color: rgb(98, 177, 9);
+    &:hover {
+        color: rgb(129, 185, 64);
+    }
+    &:visted {
+        color: rgb(98, 177, 9);    
+    }
+}
+
 .navbar-brand {
     padding-top: 0;
     padding-bottom: 0;
@@ -22,10 +32,38 @@
 
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
+    text-transform: uppercase;
 }
 
-.dropdown-item:active {
+.dropdown-item:active, .dropdown-item:hover {
     background-color: #74BC1F;
+    color: #fff;
+}
+
+.dropdown-menu .nav-item {
+    margin-right: 0;
+}
+
+.datepicker table tr td span.active.active {
+    background-color: #74BC1F;
+}
+
+.datepicker table tr td span.active:hover:hover {
+    background-color: #74BC1F;
+    color: #fff;
+}
+
+.events-archive.events-gridview #tribe-events-content {
+    table.tribe-events-calendar .tribe-events-category- {
+        background-color: #74BC1F;
+        margin: .5em 0;
+        padding: 4px 8px;
+        .tribe-events-month-event-title a {
+            display: block;
+            color: #fff;
+            text-align: center;
+        }
+    }
 }
 
 @media (min-width: 1200px) {

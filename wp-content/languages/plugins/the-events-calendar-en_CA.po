@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - The Events Calendar - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-11-29 20:56:56+0000\n"
+"PO-Revision-Date: 2019-01-04 10:57:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3121,21 +3121,9 @@ msgstr "Event Date:"
 msgid "Show Featured Event Images"
 msgstr "Show Featured Event Images"
 
-#: src/Tribe/Customizer/Widget.php:113
-msgid "Calendar Date Bar Color"
-msgstr "Calendar Date Bar Color"
-
-#: src/Tribe/Customizer/Widget.php:91
-msgid "Calendar Header Color"
-msgstr "Calendar Header Color"
-
 #: src/Tribe/Customizer/Widget.php:59
 msgid "Widgets"
 msgstr "Widgets"
-
-#: src/Tribe/Customizer/Single_Event.php:132
-msgid "Details Background Color"
-msgstr "Details Background Color"
 
 #: src/Tribe/Customizer/Single_Event.php:110
 msgid "Post Title Color"
@@ -3468,6 +3456,18 @@ msgstr "Malachite"
 msgctxt "Static front page setting"
 msgid "Main %s Page"
 msgstr "Main %s Page"
+
+#: src/Tribe/Customizer/Widget.php:113
+msgid "Calendar Date Bar Color"
+msgstr "Calendar Date Bar Colour"
+
+#: src/Tribe/Customizer/Widget.php:91
+msgid "Calendar Header Color"
+msgstr "Calendar Header Colour"
+
+#: src/Tribe/Customizer/Single_Event.php:132
+msgid "Details Background Color"
+msgstr "Details Background Colour"
 
 #: common/src/admin-views/app-shop.php:31
 msgid "Installed"
