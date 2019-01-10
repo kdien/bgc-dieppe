@@ -17,13 +17,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	}
 
 	#metaslider_container_298 {
+		position: relative;
 		margin-top: 5.5em;
-		left: 49.36936%;
+		left: 50%;
+		right: 50%;
 		margin-left: -50vw;
 		margin-right: -50vw;
 		max-width: 100vw;
-		position: relative;
-		right: 50%;
 		width: 100vw;
 	}
 
