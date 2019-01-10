@@ -73,8 +73,8 @@ a {
 }
 
 @media (min-width: 1200px) {
-    .navbar-dark .navbar-nav .active>.nav-link, .current_page_parent {
-        border-bottom: 2px solid #fff;
+    .active > .nav-link {
+        border-bottom: 1px solid #fff;
     }
 
     .navbar {
