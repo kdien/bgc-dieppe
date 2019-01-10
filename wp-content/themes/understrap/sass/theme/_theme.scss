@@ -69,6 +69,28 @@ a {
     }
 }
 
+.wp-block-image .alignright {
+    margin-left: 0;
+}
+
+.ffwd_blog_style_object_from_0 {
+    background: #4267B2;
+}
+
+#ffwd_container1_0 #ffwd_container2_0 .ffwd_blog_style_object_info_container_0 .ffwd_blog_style_object_from_name_0 {
+    color: white !important;
+}
+
+#ffwd_container1_0 #ffwd_container2_0 .ffwd_blog_style_object_info_container_0 .ffwd_from_time_post_0 {
+    color: white !important;
+    background-image: url("http://localhost:8888/bgc-dieppe/wp-content/plugins/wd-facebook-feed/images/feed/time_white.png") !important;
+}
+
+#wpadminbar {
+    position: absolute;
+    z-index: 1000001;
+}
+
 @media (min-width: 1200px) {
     .active > .nav-link {
         border-bottom: 1px solid #fff;
