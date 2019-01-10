@@ -1,6 +1,6 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 body {
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -13,7 +13,7 @@ a {
     &:hover {
         color: rgb(129, 185, 64);
     }
-    &:visted {
+    &:visited {
         color: rgb(98, 177, 9);    
     }
 }
@@ -21,6 +21,7 @@ a {
 .navbar-brand {
     padding-top: 0;
     padding-bottom: 0;
+    margin-right: 0;
 }
 
 .container-fluid {
@@ -74,6 +75,16 @@ a {
 @media (min-width: 1200px) {
     .navbar-dark .navbar-nav .active>.nav-link, .current_page_parent {
         border-bottom: 2px solid #fff;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+}
+
+@media (min-width: 375px) {
+    .navbar-toggler {
+        margin-right: 0.5em;
     }
 }
 

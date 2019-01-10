@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	#metaslider_container_298 {
 		position: relative;
-		margin-top: 5.5em;
+		/* margin-top: 5.5em; */
 		left: 50%;
 		right: 50%;
 		margin-left: -50vw;
