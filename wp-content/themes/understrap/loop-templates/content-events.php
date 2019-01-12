@@ -11,9 +11,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <style>
+
+	.updated, .byline {
+		display: none;
+	}
+
 	@media (min-width: 768px) {
 		.post {
 			margin-bottom: 2em;
+		}
+
+		.entry-title a, .entry-date {
+			color: #fff;
 		}
 
 		.entry-content {
