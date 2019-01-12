@@ -97,6 +97,10 @@ h1.entry-title {
     box-shadow: 0 0 0 0.2rem rgba(116, 188, 31, .25);
 }
 
+.wpcf7 input[type=file] {
+    height: auto;
+}
+
 .wpcf7 input[type=submit] {
     color: #fff;
     background-color: #74BC1F;
