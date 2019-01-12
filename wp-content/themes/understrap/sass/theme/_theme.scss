@@ -15,14 +15,14 @@ a {
     }
 }
 
+.container-fluid {
+    padding-left: 0;
+}
+
 .navbar-brand {
     padding-top: 0;
     padding-bottom: 0;
     margin-right: 0;
-}
-
-.container-fluid {
-    padding-left: 0;
 }
 
 .navbar {
@@ -45,6 +45,11 @@ a {
 
 .dropdown-menu .nav-item {
     margin-right: 0;
+}
+
+h1.entry-title {
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 .datepicker table tr td span.active.active {
