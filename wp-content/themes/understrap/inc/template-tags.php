@@ -28,8 +28,8 @@ if ( ! function_exists ( 'understrap_posted_on' ) ) {
 		);
 		$posted_on   = apply_filters(
 			'understrap_posted_on', sprintf(
-				'<span class="posted-on">%1$s <a href="%2$s" rel="bookmark">%3$s</a></span>',
-				esc_html_x( 'Posted on', 'post date', 'understrap' ),
+				'<span class="posted-on font-italic">%1$s <p>%3$s</p></span>',
+				esc_html_x( '', 'post date', 'understrap' ),
 				esc_url( get_permalink() ),
 				apply_filters( 'understrap_posted_on_time', $time_string ) 
 			)

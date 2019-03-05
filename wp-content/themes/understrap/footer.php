@@ -16,7 +16,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+<div class="wrapper" id="wrapper-footer" style="padding-bottom: 0 !important">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
 
@@ -24,11 +24,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-12">
 
-				<footer class="site-footer" id="colophon">
+				<footer class="site-footer border-top" id="colophon">
 
-					<div class="site-info">
+					<div class="site-info align-middle">
 
-						<p>&copy; 2019 Boys & Girls Club of Dieppe</p>
+						<p class="small py-3 text-center mb-0">&copy; 2019 Boys & Girls Club of Dieppe</p>
 
 					</div><!-- .site-info -->
 

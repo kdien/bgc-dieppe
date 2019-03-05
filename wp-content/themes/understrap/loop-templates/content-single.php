@@ -14,6 +14,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 	.updated, .byline {
 		display: none;
 	}
+
+	.post > img {
+		margin-bottom: 2em !important;
+		margin-top: 2em !important;
+	}
+
+	span[class*="nav-"] a {
+		color: #000;
+	}
+
+	span[class*="nav-"] a:hover {
+		text-decoration: none;
+	}
+
 </style>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -30,9 +44,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<?php /*echo get_the_post_thumbnail( $post->ID, 'large' );*/ ?>
 
-	<div class="entry-content">
+	<div class="entry-content mb-5">
 
 		<?php the_content(); ?>
 
@@ -44,11 +58,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 		?>
 
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-
-		<?php understrap_entry_footer(); ?>
-
-	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->

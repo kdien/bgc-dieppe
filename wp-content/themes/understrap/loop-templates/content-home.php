@@ -27,6 +27,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 		width: 100vw;
 	}
 
+	.wp-block-column:first-child {
+		flex-basis: 60%;
+	}
+
+	.wp-block-column:last-child {
+		flex-basis: 40%;
+	}
+	img[class*="ffwd_"] {
+		max-width: 100% !important;
+	}
+	@media (min-width: 600px){
+		.wp-block-column {
+    		margin-left: 32px;
+		}
+	}
+
 </style>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
