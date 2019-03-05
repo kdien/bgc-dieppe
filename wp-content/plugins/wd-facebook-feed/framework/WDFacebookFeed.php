@@ -1643,26 +1643,14 @@ $ffwd_info_options[$ffwd_option_db]	=((isset($_POST[$ffwd_option_db])) ? esc_htm
     $facebook_graph_results = null;
     $facebook_graph_url = $uri; //TODO: Add URL checking here, else error out
 
-    //Attempt CURL
-    if (extension_loaded('curl')) {
-      $ch = curl_init();
-      curl_setopt($ch, CURLOPT_URL, $facebook_graph_url);
-      curl_setopt($ch, CURLOPT_HEADER, 0);
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-      if (!$facebook_graph_results = curl_exec($ch)) {
-        printf('<p>cURL Error: %1$s %2$s</p>', curl_errno($ch), curl_error($ch));
-        printf('<p>Please try entering <strong>%s</strong> into your URL bar and seeing if the page loads.', $facebook_graph_url);
-      }
-      if (curl_errno($ch) == 7) {
-        print '<p><strong>Your server cannot communicate with Facebook\'s servers. This means your server does not support IPv6 or is having issues resolving facebook.com. Please contact your hosting provider.';
-      }
-      curl_close($ch);
-    } else {
-      self::wd_fb_massage('error', 'Sorry, your server does not allow remote fopen or have CURL');
+    $response = wp_remote_get($facebook_graph_url);
+
+    if(isset($response->errors) && isset($response->errors["http_request_failed"][0])){
+      self::wd_fb_massage('error', $response->errors["http_request_failed"][0]);
+    }elseif( is_array( $response ) && isset($response['body'])) {
+      $header = $response['headers']; // array of http header lines
+      $facebook_graph_results = $response['body']; // use the content
     }
-
-
     $facebook_graph_results = json_decode($facebook_graph_results, true);
     if (array_key_exists("error", $facebook_graph_results)) {
       if ($facebook_graph_results['error']['code'] == 2) {

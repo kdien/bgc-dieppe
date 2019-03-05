@@ -4,7 +4,7 @@
  * Plugin Name: WD Facebook Feed
  * Plugin URI: https://web-dorado.com/products/wordpress-facebook-feed-plugin.html
  * Description:WD Facebook Feed is a completely customizable, responsive solution to help you display your Facebook feed on your WordPress website.
- * Version: 1.1.3
+ * Version: 1.1.4
  * Author: WebDorado
  * Author URI: https://web-dorado.com/wordpress-plugins-bundle.html
  * License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
@@ -17,7 +17,7 @@ define( 'WD_FFWD_URL', plugins_url( plugin_basename( dirname( __FILE__ ) ) ) );
 define( 'WD_FFWD_PRO', true );
 define( 'WD_FB_PREFIX', 'ffwd' );
 if(! defined( 'FFWD_VERSION' ) ){
-  define ('FFWD_VERSION',"1.1.3");
+  define ('FFWD_VERSION',"1.1.4");
 }
 
 
@@ -488,8 +488,10 @@ function ffwd_add_button( $buttons ) {
 
 // Register Facebook Feed WD button.
 function ffwd_register( $plugin_array ) {
-	$url                       = WD_FFWD_URL . '/js/ffwd_editor_button.js';
-	$plugin_array["wd_fb_mce"] = $url;
+    if(is_admin()) {
+      $url = WD_FFWD_URL . '/js/ffwd_editor_button.js';
+      $plugin_array["wd_fb_mce"] = $url;
+    }
 
 	return $plugin_array;
 }
@@ -506,6 +508,82 @@ function ffwd_admin_ajax() {
 }
 
 add_action( 'admin_head', 'ffwd_admin_ajax' );
+
+
+add_filter('tw_get_plugin_blocks', 'ffwd_register_plugin_block');
+function ffwd_register_plugin_block($blocks) {
+  $plugin_name =  __('Facebook Feed WD', WD_FB_PREFIX);
+  $icon_url = WD_FFWD_URL . '/images/wt-gb/ffwd_logo_editor.svg';
+  $icon_svg = WD_FFWD_URL . '/images/wt-gb/icon.svg';
+  global $wpdb;
+  $rows = $wpdb->get_results('SELECT `id`, `name` FROM `' . $wpdb->prefix . 'wd_fb_info` ORDER BY `name` ASC');
+  $data = array();
+  $data['shortcode_prefix'] = 'WD_FB';
+  $data['inputs'][] = array(
+    'type' => 'select',
+    'id' => 'WD_FB_id',
+    'name' => 'WD_FB_id',
+    'shortcode_attibute_name' => 'id',
+    'options'  => $rows,
+  );
+  $data = json_encode($data);
+
+  $blocks['tw/'.WD_FB_PREFIX] = array(
+    'title' => __('Facebook Feed WD', WD_FB_PREFIX),
+    'titleSelect' => sprintf(__('Select %s', WD_FB_PREFIX), $plugin_name),
+    'iconUrl' => $icon_url,
+    'iconSvg' => array('width' => 30, 'height' => 30, 'src' => $icon_svg),
+    'isPopup' => false,
+    'data' => $data,
+  );
+  return $blocks;
+}
+
+// Enqueue block editor assets for Gutenberg.
+add_filter('tw_get_block_editor_assets', 'ffwd_register_block_editor_assets');
+add_action( 'enqueue_block_editor_assets', 'ffwd_enqueue_block_editor_assets');
+
+function ffwd_register_block_editor_assets($assets) {
+	$version = '2.0.3';
+	$js_path = WD_FFWD_URL . '/js/tw-gb/block.js';
+	$css_path = WD_FFWD_URL . '/css/tw-gb/block.css';
+	if (!isset($assets['version']) || version_compare($assets['version'], $version) === -1) {
+	  $assets['version'] = $version;
+	  $assets['js_path'] = $js_path;
+	  $assets['css_path'] = $css_path;
+	}
+	return $assets;
+}
+
+/**
+* Enqueue block editor assets.
+*/
+function ffwd_enqueue_block_editor_assets() {
+
+	// Remove previously registered or enqueued versions
+	$wp_scripts = wp_scripts();
+	foreach ($wp_scripts->registered as $key => $value) {
+	  // Check for an older versions with prefix.
+	  if (strpos($key, 'tw-gb-block') > 0) {
+		wp_deregister_script( $key );
+		wp_deregister_style( $key );
+	  }
+	}
+      // Get plugin blocks from all 10Web plugins.
+      $blocks = apply_filters('tw_get_plugin_blocks', array());
+      // Get the last version from all 10Web plugins.
+      $assets = apply_filters('tw_get_block_editor_assets', array());
+      // Not performing unregister or unenqueue as in old versions all are with prefixes.
+      wp_enqueue_script('tw-gb-block', $assets['js_path'], array( 'wp-blocks', 'wp-element' ), $assets['version']);
+      wp_localize_script('tw-gb-block', 'tw_obj_translate', array(
+        'nothing_selected' => __('Nothing selected.', WD_FB_PREFIX),
+        'empty_item' => __('- Select -', WD_FB_PREFIX),
+        'blocks' => json_encode($blocks)
+      ));
+	wp_enqueue_style('tw-gb-block', $assets['css_path'], array( 'wp-edit-blocks' ), $assets['version']);
+}
+
+
 
 // Add the Facebook Feed WD button to editor.
 add_action( 'wp_ajax_FFWDShortcode', 'ffwd_ajax' );

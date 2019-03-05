@@ -3,8 +3,8 @@ Contributors: webdorado,10web,wdsupport
 Tags: customizable facebook feed, facebook, facebook events, facebook feed, facebook group, facebook like box, facebook likes, facebook page, facebook photos, facebook plugin, facebook posts, facebook likebox
 Requires at least: 3.4
 Requires PHP: 5.2
-Tested up to: 5.0
-Stable tag: 1.1.3
+Tested up to: 5.1
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,13 +12,13 @@ WD Facebook Feed is a comprehensive tool for displaying Facebook feed, events an
 
 == Description ==
 
-[Special Offer for all Premium Plugins](https://web-dorado.com/wordpress-plugins-bundle.html)    
-[WordPress WD Facebook Feed](https://web-dorado.com/products/wordpress-facebook-feed-plugin.html)      
-[Demo](http://wpdemo.web-dorado.com/facebook-feed/)  
-[Demo Admin](http://wpdemo.web-dorado.com/wp-admin/admin.php?page=info_ffwd)  
-[User Guide](https://web-dorado.com/wordpress-facebook-feed/installing.html)       
-[Support Forum](https://web-dorado.com/forum/facebook-feed-wd.html)     
-       
+[Special Offer for all Premium Plugins](https://web-dorado.com/wordpress-plugins-bundle.html)
+[WordPress WD Facebook Feed](https://web-dorado.com/products/wordpress-facebook-feed-plugin.html)
+[Demo](http://wpdemo.web-dorado.com/facebook-feed/)
+[Demo Admin](http://wpdemo.web-dorado.com/wp-admin/admin.php?page=info_ffwd)
+[User Guide](https://web-dorado.com/wordpress-facebook-feed/installing.html)
+[Support Forum](https://web-dorado.com/forum/facebook-feed-wd.html)
+
 Integrating customized content to your WordPress website from Facebook can't be any easier when using Facebook Feed WD plugin. It provides features to display a wide range of content from any page with full control over the content length, type and styling.
 
 Whether you want to display an entire timeline of the feed with all its content, or just specific photos, videos, events, links and statuses from it, you can easily do that by choosing the desired post type you want to display. Each of the content type has its display views available and its own set of settings that you can fully customize.
@@ -28,49 +28,49 @@ The plugin features a powerful lightbox which supports filmstrip display (Premiu
 **Benefits**
 
    * **No feed limitations** -  Facebook Feed WD lets you display unlimited number of feeds on every post and page. You can have different feeds based Facebook pages within the same page or post.
-   * **User engagement** - Facebook is a social media giant and most probably a great majority of your site visitors uses it on a daily basis. Displaying feeds with relevant content is definitely going to increase user engagement of your posts and have your visitors stay on your website way longer. 
+   * **User engagement** - Facebook is a social media giant and most probably a great majority of your site visitors uses it on a daily basis. Displaying feeds with relevant content is definitely going to increase user engagement of your posts and have your visitors stay on your website way longer.
    * **Go social** -  Your posts might be really interesting and engaging, but a little bit of content from Facebook won't do any harm. You can support your posts with relevant content from Facebook and actually make your posts and pages look more interesting and fun.
-   * **Filter out desired content** - Facebook is a great source of information, but sometimes there is just too much of the stuff that's not relevant to your website or you simply don't want to show in your posts. With the premium version of Facebook Feed WD you can choose specific content types you want your visitors to see and engage with, such as photos, videos, albums and events. 
-   * **Customization** - There are wide range of feed customizing options in the plugin to make sure your feeds don't look boring. Depending on the content type you want to display you can choose between different layout options. Also if you're using the premium version of the plugin there are various themes available that you can apply to the feeds. 
-   * **Be in Charge** - Facebook Feed WD is giving you full control over the content you want to display. You can choose posts' user roles, the number of the posts displayed on the page, the length of the posts, feed update option, enable social sharing buttons, and many more. 
+   * **Filter out desired content** - Facebook is a great source of information, but sometimes there is just too much of the stuff that's not relevant to your website or you simply don't want to show in your posts. With the premium version of Facebook Feed WD you can choose specific content types you want your visitors to see and engage with, such as photos, videos, albums and events.
+   * **Customization** - There are wide range of feed customizing options in the plugin to make sure your feeds don't look boring. Depending on the content type you want to display you can choose between different layout options. Also if you're using the premium version of the plugin there are various themes available that you can apply to the feeds.
+   * **Be in Charge** - Facebook Feed WD is giving you full control over the content you want to display. You can choose posts' user roles, the number of the posts displayed on the page, the length of the posts, feed update option, enable social sharing buttons, and many more.
    * **Awesome support at your disposal** - The team behind Facebook Feed WD provides timely and effective support to all its users. We keep standards high and response time low.
 
 **What&#39;s in it**
 
 **RESPONSIVE LAYOUT**
 
-Displayed feeds are responsive and scale perfectly to any screen. 
+Displayed feeds are responsive and scale perfectly to any screen.
 
 **UNLIMITED FEEDS**
 
-You can display as many feeds within the same post or page. Moreover, the feeds can be based on different Facebook pages. 
+You can display as many feeds within the same post or page. Moreover, the feeds can be based on different Facebook pages.
 
 **FEED AUTO UPDATE**
 
-Specify the feed update interval, and the feed content will be automatically updated within the provided time period. You can also choose feed update option, whether the old posts are removed when the new ones are added, or the old ones are displayed together with the new ones. 
+Specify the feed update interval, and the feed content will be automatically updated within the provided time period. You can also choose feed update option, whether the old posts are removed when the new ones are added, or the old ones are displayed together with the new ones.
 
 **FACEBOOK WIDGET**
 
-You can insert the feeds into your posts or pages using the provided shortcode, or display the feeds with the widget on the sidebar areas of your website. All the feed options, including feed view, number of posts,and the theme can be configured for the widget as well. 
+You can insert the feeds into your posts or pages using the provided shortcode, or display the feeds with the widget on the sidebar areas of your website. All the feed options, including feed view, number of posts,and the theme can be configured for the widget as well.
 
 **MULTIPLE FEED LAYOUTS**
 
-Facebook Feed WD comes with a number of feed display layouts - Album view for albums, Masonry and Thumbnail views for Facebook videos and photos, BlogStyle and Thumbnail view for Facebook events. The view options are available in the premium version, and vary depending on the content type you want to display. 
+Facebook Feed WD comes with a number of feed display layouts - Album view for albums, Masonry and Thumbnail views for Facebook videos and photos, BlogStyle and Thumbnail view for Facebook events. The view options are available in the premium version, and vary depending on the content type you want to display.
 
 **THEMES**
 
-The users of the premium version will find four themes that they can apply to the feeds. The free version uses the default theme. All the parameters of the themes can be configured and reset any time. 
+The users of the premium version will find four themes that they can apply to the feeds. The free version uses the default theme. All the parameters of the themes can be configured and reset any time.
 
 **POWERFUL LIGHTBOX**
 
-The plugin features an advanced lightbox which supports full-width view and 15 transition effects. The premium version of the plugin also support filsmtrip view within the widget. 
+The plugin features an advanced lightbox which supports full-width view and 15 transition effects. The premium version of the plugin also support filsmtrip view within the widget.
 
 **SOCIAL SHARING**
 
-Social sharing feature is available in the premium version of the plugin, and it will let your site visitors share the feeds on Google+, Twitter and Facebook. 
+Social sharing feature is available in the premium version of the plugin, and it will let your site visitors share the feeds on Google+, Twitter and Facebook.
 
 
- 
+
 **SETTINGS/CUSTOMIZATION**
 *Some customizations described here are available in Premium version. Please refer to premium feature summary below.*
 
@@ -78,13 +78,13 @@ To have Facebook Feed WD plugin up and running you have to create an app on Face
 
 Adding feeds is just a matter of a few clicks. You just click on the **Add new** button from the feeds section of the plugin, and a new window with four setting tabs will open, including settings for the feed, lightbox, comments and events. From the main feed settings you set the page to create a feed with. Under the main settings you can also choose whether you display the whole timeline of the feed, or choose to display only specific content, such as only photos, videos, links or events.
 
-With a Facebook page feed, you can filter out the content based on user roles, and show posts and updates only from the page owner or other users from the group, or both. There is a long list of the lightbox settings you can enable, including social share buttons, showing comments, playing filmstrip, and more. The comments settings mainly include choosing comment filtering option, whether its top level or stream, with the former being the same structure as in Facebook and the latter including all-level comments. Here you can also enable showing the comment replies and choose commenting order. 
+With a Facebook page feed, you can filter out the content based on user roles, and show posts and updates only from the page owner or other users from the group, or both. There is a long list of the lightbox settings you can enable, including social share buttons, showing comments, playing filmstrip, and more. The comments settings mainly include choosing comment filtering option, whether its top level or stream, with the former being the same structure as in Facebook and the latter including all-level comments. Here you can also enable showing the comment replies and choose commenting order.
 
 
 **[Premium version adds](https://web-dorado.com/products/wordpress-facebook-feed-plugin.html)**
 
-   * Specific content feeds, where you can choose to display only single type of content from your Facebook wall (photos, videos, albums, events)    
-   * Show Facebook share buttons     
+   * Specific content feeds, where you can choose to display only single type of content from your Facebook wall (photos, videos, albums, events)
+   * Show Facebook share buttons
    * Advanced lightbox with comments
    * Filmstrip for lightbox
    * Themes to change styles and colors for each view
@@ -92,7 +92,7 @@ With a Facebook page feed, you can filter out the content based on user roles, a
    * Social sharing for feed to Google Plus, Twitter and Facebook
 
 
-###IMPORTANT:    
+###IMPORTANT:
 If you think you found a bug in WD Facebook Feed or have any problem/question concerning this plugin, please check out [Support Forum](https://wordpress.org/support/plugin/wd-facebook-feed) . If you do not find a solution here, do not hesitate to [click here to contact us](https://web-dorado.com/support/contact-us.html).
 
 == Privacy Policy =
@@ -100,22 +100,28 @@ The plugin uses Facebook API to get public data from Facebook. All the received 
 
 == Changelog ==
 
+= 1.1.4 =
+* New: Gutenberg block
+* Fixed: Replace curl calls by wp_remote_get and wp_remote_post
+* Fixed: Failing to save theme (Premium)
+* Fixed: Compatibility with some plugins
+
 = 1.1.3 =
-* Added: Facebook widget in 10Web Builder  
+* Added: Facebook widget in 10Web Builder
 
 = 1.1.2 =
-* Fixed: Inserting shortcode when when no feed is selected    
-* Fixed: Events features are removed because Facebook events API was shut down   
+* Fixed: Inserting shortcode when when no feed is selected
+* Fixed: Events features are removed because Facebook events API was shut down
 
 = 1.1.1 =
 * Improved: Simplified Facebook login. No need to enter app ID and get page tokens manually. This is a new Facebook app, so reauthentication is required.
 * Fixed: Elementor compatibility
 
 = 1.1.0 =
-* **Important: Breaking change. Obtaining page access token is required to display your page content with Facebook Feed WD plugin. See the [documentation](https://web-dorado.com/wordpress-facebook-feed/options.html).  
-* Fixed: Error on PHP 7.2  
-* Fixed: Notices when feed is unpublished   
-* Changed: Deactivation popup   
+* **Important: Breaking change. Obtaining page access token is required to display your page content with Facebook Feed WD plugin. See the [documentation](https://web-dorado.com/wordpress-facebook-feed/options.html).
+* Fixed: Error on PHP 7.2
+* Fixed: Notices when feed is unpublished
+* Changed: Deactivation popup
 
 = 1.0.38 =
 * New: Using page access token
