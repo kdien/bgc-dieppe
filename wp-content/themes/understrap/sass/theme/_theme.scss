@@ -1,6 +1,24 @@
+html {
+    height: 100%;
+}
+
 body {
     width: 100%;
     overflow-x: hidden;
+    height: 100%;
+
+    /* Sticky footer */
+    #page {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #page-wrapper {
+        flex: 1 0 auto;
+    }
+    #wrapper-footer {
+        flex-shrink: 0;
+    }
 }
 
 .bg-primary {
