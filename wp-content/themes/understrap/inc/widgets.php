@@ -115,5 +115,24 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		    'after_title'    => '</h3>', 
 		) );
 
+		register_sidebar( array(
+			'name'          => __( 'Footer Sub', 'understrap' ),
+			'id'            => 'footersub',
+			'description'   => __( 'Full sized sub footer widget with dynamic grid', 'understrap' ),
+		    //'before_widget'  => '<div id="%1$s" class="footer-widget %2$s '. understrap_slbd_count_widgets( 'footerfull' ) .'">', 
+		    //'after_widget'   => '</div><!-- .footer-widget -->', 
+		    //'before_title'   => '<h3 class="widget-title">', 
+		    //'after_title'    => '</h3>', 
+		) );
+		register_sidebar( array(
+			'name'          => __( 'Footer Img', 'understrap' ),
+			'id'            => 'footerimg',
+			'description'   => __( 'Footer image', 'understrap' ),
+		    //'before_widget'  => '<div id="%1$s" class="footer-widget %2$s '. understrap_slbd_count_widgets( 'footerfull' ) .'">', 
+		    //'after_widget'   => '</div><!-- .footer-widget -->', 
+		    //'before_title'   => '<h3 class="widget-title">', 
+		    //'after_title'    => '</h3>', 
+		) );
+
 	}
 } // endif function_exists( 'understrap_widgets_init' ).

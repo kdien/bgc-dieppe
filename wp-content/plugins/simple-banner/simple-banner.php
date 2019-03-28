@@ -62,6 +62,12 @@ add_action( 'wp_head', 'simple_banner_custom_text');
 function simple_banner_custom_text()
 {
 	if (get_option('simple_banner_text') != ""){
+		//mwilliams
+		echo '<script>jQuery(document).ready(function($){
+				$("nav").removeClass("fixed-top");
+				$(".navbar").css("margin-top", "46px");
+			});
+		  </script>';
 		if (!get_option('pro_version_enabled') || (get_option('pro_version_enabled') && !in_array(get_the_ID(), explode(",", get_option('disabled_pages_array'))))){
 			echo '<script type="text/javascript">jQuery(document).ready(function() {
 			var bannerSpan = document.getElementById("simple-banner");

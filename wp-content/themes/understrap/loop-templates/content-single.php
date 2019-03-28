@@ -36,16 +36,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
+
+
+	</header><!-- .entry-header -->
+	<figure class="wp-block-image page-banner">
+		<img src="http://oulton-001-site9.gtempurl.com/wp-content/uploads/2019/03/banner-events2.jpg" alt="" class="wp-image-535"/>
+	</figure>
+	<?php /*echo get_the_post_thumbnail( $post->ID, 'large' );*/ ?>
 		<div class="entry-meta">
 
 			<?php understrap_posted_on(); ?>
 
 		</div><!-- .entry-meta -->
-
-	</header><!-- .entry-header -->
-
-	<?php /*echo get_the_post_thumbnail( $post->ID, 'large' );*/ ?>
-
 	<div class="entry-content mb-5">
 
 		<?php the_content(); ?>

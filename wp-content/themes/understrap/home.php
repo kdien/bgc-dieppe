@@ -25,7 +25,6 @@ $container   = get_theme_mod( 'understrap_container_type' );
 <?php endif; ?>
 
 <div class="wrapper" id="index-wrapper">
-
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
@@ -34,6 +33,15 @@ $container   = get_theme_mod( 'understrap_container_type' );
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
+				<?php if(is_home()) : ?>		
+					<header class="entry-header">
+						<h1 class="entry-title">Events | Événements</h1>	
+					</header>
+					<figure class="wp-block-image page-banner">
+						<img src="http://localhost:8888/bgc-dieppe/wp-content/uploads/2019/03/banner-events2.jpg" alt="" class="wp-image-535"/>
+					</figure>
+					<h2>Events | Événements</h2>
+				<?php endif; ?>
 
 				<?php if ( have_posts() ) : ?>
 
@@ -72,6 +80,6 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- Container end -->
 
-</div><!-- Wrapper end -->
+</div><!-- Index Wrapper end -->
 
 <?php get_footer(); ?>

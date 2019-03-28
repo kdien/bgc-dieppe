@@ -30,6 +30,9 @@ $container   = get_theme_mod( 'understrap_container_type' );
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
+				<figure class="wp-block-image page-banner">
+					<img src="http://oulton-001-site9.gtempurl.com/wp-content/uploads/2019/03/banner-events2.jpg" alt="" class="wp-image-535"/>
+				</figure>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 

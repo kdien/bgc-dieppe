@@ -30,6 +30,7 @@ Supports Thumbs: true
 	padding: 15px 0;
 	width: 100%;
 	z-index: 99;
+	margin-bottom: 1.5em;/*mwilliams*/
 }
 .metaslider .theme-default .nivo-controlNav a {
 	display:inline-block;

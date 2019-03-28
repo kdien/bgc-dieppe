@@ -27,20 +27,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
-
-		
-
-		<?php if ( 'post' == get_post_type() ) : ?>
-
-			
+		<?php if ( 'post' == get_post_type() ) : ?>		
 
 		<?php endif; ?>
 
-	</header><!-- .entry-header -->
-
-	
+	</header><!-- .entry-header -->	
 
 	<div class="entry-content">
+	
 		<div class="card">
 			<div class="card-body">
 				<div class="row">

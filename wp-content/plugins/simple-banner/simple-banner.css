@@ -3,7 +3,9 @@
   background: #024985;
   text-align: center;
   z-index: 200000;
-  position: relative;
+  /*mwilliams
+  position: relative;*/
+  position:fixed;
   display: block; 
 }
 

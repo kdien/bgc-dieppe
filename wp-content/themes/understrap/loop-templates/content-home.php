@@ -18,13 +18,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	#metaslider_container_298 {
 		position: relative;
-		/* margin-top: 5.5em; */
+		margin-top: -60px;
 		left: 50%;
 		right: 50%;
 		margin-left: -50vw;
 		margin-right: -50vw;
 		max-width: 100vw;
 		width: 100vw;
+		bottom:-30px;/*mwilliams*/
 	}
 
 	.wp-block-column:first-child {
