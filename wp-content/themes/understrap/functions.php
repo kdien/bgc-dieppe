@@ -49,3 +49,15 @@ remove_action('wp_head', 'feed_links_extra', 3);
 remove_action('wp_head', 'start_post_rel_link', 10, 0);
 remove_action('wp_head', 'parent_post_rel_link', 10, 0);
 remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
+
+//mwilliams:  Changing the Logo Based on the Page
+function change_logo_on_single($html) {
+
+	if(is_page(array('pre-school-daycare','after-school-daycare'))){
+	   $html = preg_replace('/<img(.*?)\/>/', '<img src="http://oulton-001-site9.gtempurl.com/wp-content/uploads/2019/03/DaycareLogo.png" class="custom-logo" alt="" itemprop="logo" />', $html);
+	}
+ 
+	return $html;
+ }
+ 
+ add_filter('get_custom_logo','change_logo_on_single');
